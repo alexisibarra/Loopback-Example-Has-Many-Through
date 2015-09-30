@@ -1,5 +1,5 @@
 {
-  "name": "appointment",
+  "name": "Appointment",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,7 +11,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "physician": {
+      "type": "belongsTo",
+      "model": "Physician",
+      "foreignKey": "physicianId"
+    },
+    "patient": {
+      "type": "belongsTo",
+      "model": "Patient",
+      "foreignKey": "patientId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -32,15 +32,15 @@
     "dataSource": "db",
     "public": false
   },
-  "physician": {
+  "Physician": {
     "dataSource": "db",
     "public": true
   },
-  "patient": {
+  "Patient": {
     "dataSource": "db",
     "public": true
   },
-  "appointment": {
+  "Appointment": {
     "dataSource": "db",
     "public": true
   }
